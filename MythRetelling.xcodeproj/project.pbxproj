@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787062070CD0000E1B5E9 /* AppDelegate.swift */; };
-		87D787092070CD0000E1B5E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787082070CD0000E1B5E9 /* ViewController.swift */; };
+		87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787082070CD0000E1B5E9 /* GameViewController.swift */; };
 		87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D7870A2070CD0000E1B5E9 /* Main.storyboard */; };
 		87D7870F2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D7870D2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld */; };
 		87D787112070CD0100E1B5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D787102070CD0100E1B5E9 /* Assets.xcassets */; };
 		87D787142070CD0100E1B5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */; };
 		87D7871F2070CD0200E1B5E9 /* MythRetellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D7871E2070CD0200E1B5E9 /* MythRetellingTests.swift */; };
 		87D7872A2070CD0200E1B5E9 /* MythRetellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787292070CD0200E1B5E9 /* MythRetellingUITests.swift */; };
+		87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787392070D0F300E1B5E9 /* MythCard.swift */; };
+		87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		87D787032070CD0000E1B5E9 /* MythRetelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythRetelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D787062070CD0000E1B5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87D787082070CD0000E1B5E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87D787082070CD0000E1B5E9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		87D7870B2070CD0000E1B5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D7870E2070CD0000E1B5E9 /* MythRetelling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MythRetelling.xcdatamodel; sourceTree = "<group>"; };
 		87D787102070CD0100E1B5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		87D787252070CD0200E1B5E9 /* MythRetellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MythRetellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D787292070CD0200E1B5E9 /* MythRetellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythRetellingUITests.swift; sourceTree = "<group>"; };
 		87D7872B2070CD0200E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D787392070D0F300E1B5E9 /* MythCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCard.swift; sourceTree = "<group>"; };
+		87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCardCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				87D787062070CD0000E1B5E9 /* AppDelegate.swift */,
-				87D787082070CD0000E1B5E9 /* ViewController.swift */,
+				87D787082070CD0000E1B5E9 /* GameViewController.swift */,
+				87D787392070D0F300E1B5E9 /* MythCard.swift */,
+				87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */,
 				87D7870A2070CD0000E1B5E9 /* Main.storyboard */,
 				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
 				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D787092070CD0000E1B5E9 /* ViewController.swift in Sources */,
+				87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */,
+				87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */,
+				87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */,
 				87D7870F2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld in Sources */,
 				87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */,
 			);
