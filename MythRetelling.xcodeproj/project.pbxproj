@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871C60082071D20400F6B8E8 /* game_cards.txt in Resources */ = {isa = PBXBuildFile; fileRef = 871C60072071D20400F6B8E8 /* game_cards.txt */; };
+		871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600920720B4A00F6B8E8 /* StoryViewController.swift */; };
+		871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600B20720C0C00F6B8E8 /* Utilities.swift */; };
 		87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787062070CD0000E1B5E9 /* AppDelegate.swift */; };
 		87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787082070CD0000E1B5E9 /* GameViewController.swift */; };
 		87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D7870A2070CD0000E1B5E9 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		871C60072071D20400F6B8E8 /* game_cards.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = game_cards.txt; sourceTree = "<group>"; };
+		871C600920720B4A00F6B8E8 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		871C600B20720C0C00F6B8E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		87D787032070CD0000E1B5E9 /* MythRetelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythRetelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D787062070CD0000E1B5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D787082070CD0000E1B5E9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -105,13 +111,16 @@
 			children = (
 				87D787062070CD0000E1B5E9 /* AppDelegate.swift */,
 				87D787082070CD0000E1B5E9 /* GameViewController.swift */,
+				871C600920720B4A00F6B8E8 /* StoryViewController.swift */,
 				87D787392070D0F300E1B5E9 /* MythCard.swift */,
 				87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */,
+				871C600B20720C0C00F6B8E8 /* Utilities.swift */,
 				87D7870A2070CD0000E1B5E9 /* Main.storyboard */,
 				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
 				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
 				87D787152070CD0100E1B5E9 /* Info.plist */,
 				87D7870D2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld */,
+				871C60072071D20400F6B8E8 /* game_cards.txt */,
 			);
 			path = MythRetelling;
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 			files = (
 				87D787142070CD0100E1B5E9 /* LaunchScreen.storyboard in Resources */,
 				87D787112070CD0100E1B5E9 /* Assets.xcassets in Resources */,
+				871C60082071D20400F6B8E8 /* game_cards.txt in Resources */,
 				87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */,
 				87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */,
+				871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */,
 				87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */,
 				87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */,
 				87D7870F2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld in Sources */,

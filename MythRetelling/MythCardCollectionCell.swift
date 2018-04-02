@@ -9,5 +9,5 @@
 import UIKit
 
 class MythCardCollectionCell: UICollectionViewCell {
-    
+    @IBOutlet var cardInfoLbl: UILabel!
 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dTn-pA-mSu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--The Odyssey-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,42 +19,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-5S-Rba">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-5S-Rba">
+                                <rect key="frame" x="1" y="65" width="373" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q2N-n5-E6M">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="195" height="224"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="kEV-4x-kmt" customClass="MythCardCollectionCell" customModule="MythRetelling" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="89" y="0.0" width="195" height="224"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ovD-Vr-ngH">
+                                                    <rect key="frame" x="8" y="8" width="179" height="208"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="ovD-Vr-ngH" firstAttribute="top" secondItem="kEV-4x-kmt" secondAttribute="topMargin" id="PUt-PL-ujA"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ovD-Vr-ngH" secondAttribute="trailing" id="ie2-e7-z7u"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ovD-Vr-ngH" secondAttribute="bottom" id="oN3-9m-Ezn"/>
+                                            <constraint firstItem="ovD-Vr-ngH" firstAttribute="leading" secondItem="kEV-4x-kmt" secondAttribute="leadingMargin" id="raC-gT-fEX"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cardInfoLbl" destination="ovD-Vr-ngH" id="ikJ-cs-0hK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ddL-qx-qMf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PD3-Hi-EUP"/>
+                                </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Try-Ac-VSn">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Help" id="Oao-C9-wgv">
+                                        <connections>
+                                            <action selector="helpBtnPressed:" destination="BYZ-38-t0r" id="iKb-KV-yAE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aU2-5S-Rba" secondAttribute="bottom" id="Ruf-h3-8Xw"/>
-                            <constraint firstItem="aU2-5S-Rba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ukz-Zb-1ZZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aU2-5S-Rba" secondAttribute="trailing" id="mAS-Vv-SpQ"/>
-                            <constraint firstItem="aU2-5S-Rba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="txT-Tr-XGy"/>
+                            <constraint firstAttribute="trailing" secondItem="Try-Ac-VSn" secondAttribute="trailing" id="4Cj-W5-g8T"/>
+                            <constraint firstItem="aU2-5S-Rba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="YVH-qh-c7T"/>
+                            <constraint firstItem="Try-Ac-VSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fTN-VI-mUg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aU2-5S-Rba" secondAttribute="trailing" constant="1" id="mAS-Vv-SpQ"/>
+                            <constraint firstItem="Try-Ac-VSn" firstAttribute="top" secondItem="aU2-5S-Rba" secondAttribute="bottom" constant="1" id="q5u-DS-aVf"/>
+                            <constraint firstItem="Try-Ac-VSn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qRU-QT-cN0"/>
+                            <constraint firstItem="aU2-5S-Rba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="txT-Tr-XGy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="The Odyssey" id="QrE-W7-6IO">
+                        <barButtonItem key="leftBarButtonItem" title="New Game" id="MlE-jx-Ycu">
+                            <connections>
+                                <action selector="newGameBtnPressed:" destination="BYZ-38-t0r" id="CEn-ks-YXN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Guess" id="rs3-lS-uWL">
+                            <connections>
+                                <action selector="selectBtnPressed:" destination="BYZ-38-t0r" id="knk-yW-MhQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cardCollectionView" destination="aU2-5S-Rba" id="qko-rb-37G"/>
+                        <outlet property="helpBtn" destination="Oao-C9-wgv" id="cH7-SK-xbx"/>
+                        <outlet property="selectBtn" destination="rs3-lS-uWL" id="7sQ-42-0aw"/>
+                        <segue destination="4ha-dM-Z4b" kind="show" identifier="showStory" id="uaR-C0-RW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2020" y="-215.44227886056973"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="dSv-lv-HdN">
+            <objects>
+                <viewController id="4ha-dM-Z4b" customClass="StoryViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98L-8d-gTd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qlw-fe-LCT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qlw-fe-LCT" firstAttribute="leading" secondItem="mRV-im-rgN" secondAttribute="leading" id="Omb-Tv-elb"/>
+                            <constraint firstItem="Qlw-fe-LCT" firstAttribute="top" secondItem="mRV-im-rgN" secondAttribute="top" id="Tcx-a9-IyG"/>
+                            <constraint firstItem="mRV-im-rgN" firstAttribute="trailing" secondItem="Qlw-fe-LCT" secondAttribute="trailing" id="i52-0W-e4F"/>
+                            <constraint firstItem="mRV-im-rgN" firstAttribute="bottom" secondItem="Qlw-fe-LCT" secondAttribute="bottom" id="usK-AJ-GIK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mRV-im-rgN"/>
+                    </view>
+                    <connections>
+                        <outlet property="storyTextView" destination="Qlw-fe-LCT" id="Q6L-5f-RV8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSa-fF-663" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="-215"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n06-1Q-frz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dTn-pA-mSu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jsK-gE-MGw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qIZ-eU-FOE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1U-Ja-n3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="-215.44227886056973"/>
         </scene>
     </scenes>
 </document>
