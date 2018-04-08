@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB2AF574908F2C68DAAB76D /* Pods_MythRetelling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6203921DF7AF04E040101F /* Pods_MythRetelling.framework */; };
 		871C60082071D20400F6B8E8 /* game_cards.txt in Resources */ = {isa = PBXBuildFile; fileRef = 871C60072071D20400F6B8E8 /* game_cards.txt */; };
 		871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600920720B4A00F6B8E8 /* StoryViewController.swift */; };
 		871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600B20720C0C00F6B8E8 /* Utilities.swift */; };
+		8730F78F2079B4F200706B45 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F78E2079B4F200706B45 /* MainMenuViewController.swift */; };
+		8730F7912079B52700706B45 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7902079B52700706B45 /* HelpTableViewController.swift */; };
+		8730F7952079B5BA00706B45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7942079B5BA00706B45 /* Constants.swift */; };
+		8730F79D2079BA1F00706B45 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F79C2079BA1F00706B45 /* GameManager.swift */; };
+		8730F79F2079D72600706B45 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F79E2079D72600706B45 /* ScoreboardViewController.swift */; };
+		8730F7A62079DD6400706B45 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7A52079DD6400706B45 /* ScoreTableViewCell.swift */; };
+		8730F7A82079F52E00706B45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7A72079F52E00706B45 /* Extensions.swift */; };
+		876142BB2079FB9400D8FF6A /* GameBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876142BA2079FB9400D8FF6A /* GameBackend.swift */; };
+		876142BE2079FF5700D8FF6A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876142BD2079FF5700D8FF6A /* Login.storyboard */; };
+		876142C1207A017F00D8FF6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876142C0207A017F00D8FF6A /* LoginViewController.swift */; };
+		878E8FB3207A08B300304A1A /* GameStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E8FB2207A08B300304A1A /* GameStat.swift */; };
 		87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787062070CD0000E1B5E9 /* AppDelegate.swift */; };
 		87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787082070CD0000E1B5E9 /* GameViewController.swift */; };
 		87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D7870A2070CD0000E1B5E9 /* Main.storyboard */; };
@@ -20,6 +32,8 @@
 		87D7872A2070CD0200E1B5E9 /* MythRetellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787292070CD0200E1B5E9 /* MythRetellingUITests.swift */; };
 		87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787392070D0F300E1B5E9 /* MythCard.swift */; };
 		87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */; };
+		B75202B735C911E42700B8A6 /* Pods_MythRetellingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6F3B0D1AE9BEE39E043757 /* Pods_MythRetellingTests.framework */; };
+		E425A3D7B5648263E18BBB33 /* Pods_MythRetellingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32798B37D8A12C7DEB382099 /* Pods_MythRetellingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +54,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32798B37D8A12C7DEB382099 /* Pods_MythRetellingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MythRetellingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B3AD0F47517BD3DB0754E0 /* Pods-MythRetellingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingUITests/Pods-MythRetellingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58DB88105214AD4D24C96F31 /* Pods-MythRetelling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetelling.release.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetelling/Pods-MythRetelling.release.xcconfig"; sourceTree = "<group>"; };
+		5CFC672CD5262B9AC2587795 /* Pods-MythRetelling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetelling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetelling/Pods-MythRetelling.debug.xcconfig"; sourceTree = "<group>"; };
+		6A6F3B0D1AE9BEE39E043757 /* Pods_MythRetellingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MythRetellingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		871C60072071D20400F6B8E8 /* game_cards.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = game_cards.txt; sourceTree = "<group>"; };
 		871C600920720B4A00F6B8E8 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		871C600B20720C0C00F6B8E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8730F78E2079B4F200706B45 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		8730F7902079B52700706B45 /* HelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		8730F7942079B5BA00706B45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8730F79C2079BA1F00706B45 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		8730F79E2079D72600706B45 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
+		8730F7A52079DD6400706B45 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		8730F7A72079F52E00706B45 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		876142BA2079FB9400D8FF6A /* GameBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBackend.swift; sourceTree = "<group>"; };
+		876142BD2079FF5700D8FF6A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		876142C0207A017F00D8FF6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		878E8FB2207A08B300304A1A /* GameStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStat.swift; sourceTree = "<group>"; };
 		87D787032070CD0000E1B5E9 /* MythRetelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythRetelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D787062070CD0000E1B5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D787082070CD0000E1B5E9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +80,7 @@
 		87D7870E2070CD0000E1B5E9 /* MythRetelling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MythRetelling.xcdatamodel; sourceTree = "<group>"; };
 		87D787102070CD0100E1B5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D787132070CD0100E1B5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		87D787152070CD0100E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D787152070CD0100E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "MythRetelling/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		87D7871A2070CD0200E1B5E9 /* MythRetellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MythRetellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D7871E2070CD0200E1B5E9 /* MythRetellingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythRetellingTests.swift; sourceTree = "<group>"; };
 		87D787202070CD0200E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +89,10 @@
 		87D7872B2070CD0200E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D787392070D0F300E1B5E9 /* MythCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCard.swift; sourceTree = "<group>"; };
 		87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCardCollectionCell.swift; sourceTree = "<group>"; };
+		C412A939AD3006440E8340EE /* Pods-MythRetellingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6A4023056D2E3F28074373D /* Pods-MythRetellingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0E8A8FE604602831E4AC653 /* Pods-MythRetellingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingUITests/Pods-MythRetellingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE6203921DF7AF04E040101F /* Pods_MythRetelling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MythRetelling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB2AF574908F2C68DAAB76D /* Pods_MythRetelling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75202B735C911E42700B8A6 /* Pods_MythRetellingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +116,113 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E425A3D7B5648263E18BBB33 /* Pods_MythRetellingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3150E8409D4D758D9C143915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CFC672CD5262B9AC2587795 /* Pods-MythRetelling.debug.xcconfig */,
+				58DB88105214AD4D24C96F31 /* Pods-MythRetelling.release.xcconfig */,
+				C412A939AD3006440E8340EE /* Pods-MythRetellingTests.debug.xcconfig */,
+				C6A4023056D2E3F28074373D /* Pods-MythRetellingTests.release.xcconfig */,
+				D0E8A8FE604602831E4AC653 /* Pods-MythRetellingUITests.debug.xcconfig */,
+				47B3AD0F47517BD3DB0754E0 /* Pods-MythRetellingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E43F811EAACF5E9A5D76067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE6203921DF7AF04E040101F /* Pods_MythRetelling.framework */,
+				6A6F3B0D1AE9BEE39E043757 /* Pods_MythRetellingTests.framework */,
+				32798B37D8A12C7DEB382099 /* Pods_MythRetellingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8730F7962079B84E00706B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8730F78E2079B4F200706B45 /* MainMenuViewController.swift */,
+				8730F79E2079D72600706B45 /* ScoreboardViewController.swift */,
+				87D787082070CD0000E1B5E9 /* GameViewController.swift */,
+				871C600920720B4A00F6B8E8 /* StoryViewController.swift */,
+				8730F7902079B52700706B45 /* HelpTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8730F7972079B86200706B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87D787392070D0F300E1B5E9 /* MythCard.swift */,
+				8730F79C2079BA1F00706B45 /* GameManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8730F7982079B87E00706B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */,
+				8730F7A52079DD6400706B45 /* ScoreTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8730F7992079B89A00706B45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				871C60072071D20400F6B8E8 /* game_cards.txt */,
+				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
+				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
+				87D787152070CD0100E1B5E9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8730F79A2079B8B600706B45 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				871C600B20720C0C00F6B8E8 /* Utilities.swift */,
+				8730F7942079B5BA00706B45 /* Constants.swift */,
+				8730F7A72079F52E00706B45 /* Extensions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		8730F7A42079D98300706B45 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				87D7870D2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		876142BC2079FB9A00D8FF6A /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				876142BA2079FB9400D8FF6A /* GameBackend.swift */,
+				878E8FB2207A08B300304A1A /* GameStat.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		876142BF207A015E00D8FF6A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				876142BD2079FF5700D8FF6A /* Login.storyboard */,
+				876142C0207A017F00D8FF6A /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		87D786FA2070CD0000E1B5E9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +230,8 @@
 				87D7871D2070CD0200E1B5E9 /* MythRetellingTests */,
 				87D787282070CD0200E1B5E9 /* MythRetellingUITests */,
 				87D787042070CD0000E1B5E9 /* Products */,
+				3150E8409D4D758D9C143915 /* Pods */,
+				6E43F811EAACF5E9A5D76067 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,18 +248,16 @@
 		87D787052070CD0000E1B5E9 /* MythRetelling */ = {
 			isa = PBXGroup;
 			children = (
-				87D787062070CD0000E1B5E9 /* AppDelegate.swift */,
-				87D787082070CD0000E1B5E9 /* GameViewController.swift */,
-				871C600920720B4A00F6B8E8 /* StoryViewController.swift */,
-				87D787392070D0F300E1B5E9 /* MythCard.swift */,
-				87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */,
-				871C600B20720C0C00F6B8E8 /* Utilities.swift */,
 				87D7870A2070CD0000E1B5E9 /* Main.storyboard */,
-				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
-				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
-				87D787152070CD0100E1B5E9 /* Info.plist */,
-				87D7870D2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld */,
-				871C60072071D20400F6B8E8 /* game_cards.txt */,
+				87D787062070CD0000E1B5E9 /* AppDelegate.swift */,
+				876142BF207A015E00D8FF6A /* Login */,
+				8730F7962079B84E00706B45 /* Controllers */,
+				8730F7972079B86200706B45 /* Models */,
+				8730F7982079B87E00706B45 /* Views */,
+				876142BC2079FB9A00D8FF6A /* Backend */,
+				8730F7A42079D98300706B45 /* Core Data */,
+				8730F79A2079B8B600706B45 /* Misc */,
+				8730F7992079B89A00706B45 /* Supporting Files */,
 			);
 			path = MythRetelling;
 			sourceTree = "<group>";
@@ -150,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D7872E2070CD0200E1B5E9 /* Build configuration list for PBXNativeTarget "MythRetelling" */;
 			buildPhases = (
+				7B649DA109FD5148DD4A27AC /* [CP] Check Pods Manifest.lock */,
 				87D786FF2070CD0000E1B5E9 /* Sources */,
 				87D787002070CD0000E1B5E9 /* Frameworks */,
 				87D787012070CD0000E1B5E9 /* Resources */,
+				4BE48D4DE806D0987647AE34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D787312070CD0200E1B5E9 /* Build configuration list for PBXNativeTarget "MythRetellingTests" */;
 			buildPhases = (
+				06D146174F9BEE16D975304D /* [CP] Check Pods Manifest.lock */,
 				87D787162070CD0200E1B5E9 /* Sources */,
 				87D787172070CD0200E1B5E9 /* Frameworks */,
 				87D787182070CD0200E1B5E9 /* Resources */,
+				0A74CDF18E43865EDE9E6792 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,9 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D787342070CD0200E1B5E9 /* Build configuration list for PBXNativeTarget "MythRetellingUITests" */;
 			buildPhases = (
+				C885F872B3F4CB55F1B5530C /* [CP] Check Pods Manifest.lock */,
 				87D787212070CD0200E1B5E9 /* Sources */,
 				87D787222070CD0200E1B5E9 /* Frameworks */,
 				87D787232070CD0200E1B5E9 /* Resources */,
+				774AD4C9F407FD5CC877946D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +393,7 @@
 				87D787142070CD0100E1B5E9 /* LaunchScreen.storyboard in Resources */,
 				87D787112070CD0100E1B5E9 /* Assets.xcassets in Resources */,
 				871C60082071D20400F6B8E8 /* game_cards.txt in Resources */,
+				876142BE2079FF5700D8FF6A /* Login.storyboard in Resources */,
 				87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,18 +414,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06D146174F9BEE16D975304D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MythRetellingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A74CDF18E43865EDE9E6792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE48D4DE806D0987647AE34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MythRetelling/Pods-MythRetelling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MythRetelling/Pods-MythRetelling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		774AD4C9F407FD5CC877946D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MythRetellingUITests/Pods-MythRetellingUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MythRetellingUITests/Pods-MythRetellingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B649DA109FD5148DD4A27AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MythRetelling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C885F872B3F4CB55F1B5530C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MythRetellingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87D786FF2070CD0000E1B5E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8730F79F2079D72600706B45 /* ScoreboardViewController.swift in Sources */,
+				8730F7A62079DD6400706B45 /* ScoreTableViewCell.swift in Sources */,
+				8730F78F2079B4F200706B45 /* MainMenuViewController.swift in Sources */,
+				876142C1207A017F00D8FF6A /* LoginViewController.swift in Sources */,
+				876142BB2079FB9400D8FF6A /* GameBackend.swift in Sources */,
+				8730F79D2079BA1F00706B45 /* GameManager.swift in Sources */,
+				8730F7952079B5BA00706B45 /* Constants.swift in Sources */,
 				871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */,
 				87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */,
 				871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */,
 				87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */,
 				87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */,
 				87D7870F2070CD0000E1B5E9 /* MythRetelling.xcdatamodeld in Sources */,
+				8730F7A82079F52E00706B45 /* Extensions.swift in Sources */,
 				87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */,
+				8730F7912079B52700706B45 /* HelpTableViewController.swift in Sources */,
+				878E8FB3207A08B300304A1A /* GameStat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,17 +717,19 @@
 		};
 		87D7872F2070CD0200E1B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFC672CD5262B9AC2587795 /* Pods-MythRetelling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
-				INFOPLIST_FILE = MythRetelling/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MythRetelling/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cody.craig.kodikraig.MythRetelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,17 +737,19 @@
 		};
 		87D787302070CD0200E1B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58DB88105214AD4D24C96F31 /* Pods-MythRetelling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
-				INFOPLIST_FILE = MythRetelling/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MythRetelling/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cody.craig.kodikraig.MythRetelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,8 +757,9 @@
 		};
 		87D787322070CD0200E1B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C412A939AD3006440E8340EE /* Pods-MythRetellingTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
@@ -509,8 +779,9 @@
 		};
 		87D787332070CD0200E1B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A4023056D2E3F28074373D /* Pods-MythRetellingTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
@@ -530,8 +801,9 @@
 		};
 		87D787352070CD0200E1B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E8A8FE604602831E4AC653 /* Pods-MythRetellingUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
 				INFOPLIST_FILE = MythRetellingUITests/Info.plist;
@@ -550,8 +822,9 @@
 		};
 		87D787362070CD0200E1B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B3AD0F47517BD3DB0754E0 /* Pods-MythRetellingUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Q4L82N58;
 				INFOPLIST_FILE = MythRetellingUITests/Info.plist;

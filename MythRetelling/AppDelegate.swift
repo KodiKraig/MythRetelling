@@ -8,15 +8,32 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    static let Backendless_ID = "C17FA23D-500B-F474-FF10-5937405DA600"
+    static let Backendless_API_Key = "1CEA5FB5-33C2-96FB-FF77-1EEA82505C00"
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        IQKeyboardManager.sharedManager().enable = true
+        
+        Backendless.sharedInstance()?.initApp(AppDelegate.Backendless_ID, apiKey: AppDelegate.Backendless_API_Key)
+        Backendless.sharedInstance().userService.setStayLoggedIn(true)
+        
+        // Check user is still logged into to backend to determine loading screen
+        if GameBackend.sI.checkIfUserLoggedIn() {
+            window?.rootViewController = AppStoryboard.main.instantiateViewController(withIdentifier: "main")
+        } else {
+            window?.rootViewController = AppStoryboard.login.instantiateViewController(withIdentifier: "initial")
+        }
+        window?.makeKeyAndVisible()
         return true
     }
 

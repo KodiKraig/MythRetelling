@@ -1,0 +1,20 @@
+PODS:
+  - Backendless (4.0.21)
+  - IQKeyboardManagerSwift (5.0.7)
+
+DEPENDENCIES:
+  - Backendless
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Backendless
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  Backendless: f91ee75f8aa9ab2156543d9bc8b8dfc1c143410a
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+
+PODFILE CHECKSUM: d5bff9733b2a706f6d85de59ff6d055c35953673
+
+COCOAPODS: 1.5.0

@@ -10,4 +10,5 @@ import UIKit
 
 class MythCardCollectionCell: UICollectionViewCell {
     @IBOutlet var cardInfoLbl: UILabel!
+    @IBOutlet var imageView: UIImageView!
 }

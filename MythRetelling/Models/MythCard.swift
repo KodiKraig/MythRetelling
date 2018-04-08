@@ -22,14 +22,15 @@ class MythCard: Equatable {
     
     // MARK: init
 
-    init(cardInfo: String, type: MythCardType) {
+    init(cardInfo: String) {
         self.cardInfo = cardInfo
-        self.type = type
+        self.type = .character
     }
 
-    convenience init(cardInfo: String, matchingInfo: String, type: MythCardType) {
-        self.init(cardInfo: cardInfo, type: type)
+    convenience init(cardInfo: String, matchingInfo: String) {
+        self.init(cardInfo: cardInfo)
         self.matchInfo = matchingInfo
+        self.type = .sentence
     }
     
     // MARK: Equatable
