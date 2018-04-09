@@ -20,6 +20,7 @@ class StoryViewController: UIViewController {
         super.viewDidLoad()
         setStoryTextView()
         storyTextView.isEditable = false
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "paper_bg")!)
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -202,7 +202,6 @@ class GameViewController: UIViewController {
                     }
                 }
             }
-            
             cardCollectionView.reloadSections(IndexSet(integer: 0))
         }
     }
@@ -278,8 +277,13 @@ extension GameViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let spacing = LocalConstants.HSpacing * (LocalConstants.HCardCount - 1)
-        return CGSize(width: collectionView.bounds.width / CGFloat(LocalConstants.HCardCount) - spacing,
-                      height: collectionView.bounds.height / CGFloat(LocalConstants.VCardCount) - spacing)
+        let width = collectionView.bounds.width / CGFloat(LocalConstants.HCardCount) - spacing
+        var height = collectionView.bounds.height / CGFloat(LocalConstants.VCardCount) - spacing
+        
+        if height < 150 {
+            height = 150
+        }
+        return CGSize(width: width, height: height)
     }
 }
 

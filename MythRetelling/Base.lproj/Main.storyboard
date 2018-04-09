@@ -36,7 +36,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="195" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ovD-Vr-ngH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="ovD-Vr-ngH">
                                                     <rect key="frame" x="8" y="8" width="179" height="208"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -79,7 +79,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="TpC-Bu-TJ5"/>
                                     <barButtonItem title="Help" id="Oao-C9-wgv">
                                         <connections>
-                                            <segue destination="VmW-CO-zRG" kind="show" id="ea9-ya-J14"/>
+                                            <segue destination="aYk-kC-klD" kind="show" id="qAt-Tp-xBR"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -121,83 +121,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2020" y="-215.44227886056973"/>
-        </scene>
-        <!--Help-->
-        <scene sceneID="Mz9-WU-tZx">
-            <objects>
-                <tableViewController id="VmW-CO-zRG" customClass="HelpTableViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CVC-z2-mSd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection headerTitle="Gameplay" id="A0e-Yq-zfm">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wtO-Xu-DGI">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wtO-Xu-DGI" id="uwO-zF-GzH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fry-we-b0U">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fry-we-b0U" id="1yz-FD-vhf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pBl-Ps-EFF">
-                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pBl-Ps-EFF" id="xn1-EG-00u">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Background" id="gkz-Kc-6bR">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="223" id="mwP-NT-Cqu">
-                                        <rect key="frame" x="0.0" y="188" width="375" height="223"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mwP-NT-Cqu" id="yT9-6K-30y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ji-ok-B75">
-                                                    <rect key="frame" x="16" y="11" width="343" height="201"/>
-                                                    <string key="text">The game was inspired from the book the Odyssey and is retelling of the end of the end of the book where Odysseus comes back home from his journey. After slaying the suitors, he is faced with retalliation from the locals in Ithaca. A battle is avoided by Athena erasing their minds of the event. Meant to shed light on the fact that in the current day, many negative events in our society come and go as if they never happened. It is important that we don't forget these negative events affecting individuals and make a stand against those in power.</string>
-                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="1Ji-ok-B75" firstAttribute="top" secondItem="yT9-6K-30y" secondAttribute="topMargin" id="JDq-lw-sVp"/>
-                                                <constraint firstItem="1Ji-ok-B75" firstAttribute="leading" secondItem="yT9-6K-30y" secondAttribute="leadingMargin" id="NvU-qq-h7f"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="1Ji-ok-B75" secondAttribute="bottom" id="TiK-Dt-nbE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="1Ji-ok-B75" secondAttribute="trailing" id="xaW-Pt-A22"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="VmW-CO-zRG" id="nPu-dW-1xi"/>
-                            <outlet property="delegate" destination="VmW-CO-zRG" id="hdG-oA-ZeO"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Help" id="nZu-KN-aLa"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="poA-wy-q8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1615" y="581"/>
         </scene>
         <!--Law Abiding Citizen-->
         <scene sceneID="dSv-lv-HdN">
@@ -406,7 +329,7 @@
             </objects>
             <point key="canvasLocation" x="2020" y="-922.48875562218893"/>
         </scene>
-        <!--Welcome-->
+        <!--Law Abiding Citizen-->
         <scene sceneID="GoT-aJ-R0W">
             <objects>
                 <viewController id="8tR-wE-GXu" customClass="MainMenuViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
@@ -468,7 +391,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="429-yZ-UlX"/>
                                     <barButtonItem title="Help" id="Vnu-ls-EQ5">
                                         <connections>
-                                            <segue destination="VmW-CO-zRG" kind="show" id="gr6-Nd-fnN"/>
+                                            <segue destination="aYk-kC-klD" kind="show" id="sOp-Za-tv2"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -486,7 +409,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U0m-tQ-YGa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="fNx-8s-5sX">
+                    <navigationItem key="navigationItem" title="Law Abiding Citizen" id="fNx-8s-5sX">
                         <barButtonItem key="leftBarButtonItem" title="Scoreboard" id="Ydn-K0-5sb">
                             <connections>
                                 <segue destination="iyy-or-lfI" kind="show" id="SDd-J6-PGI"/>
@@ -509,12 +432,74 @@
             </objects>
             <point key="canvasLocation" x="1201" y="-215"/>
         </scene>
+        <!--Help-->
+        <scene sceneID="cpL-An-Olm">
+            <objects>
+                <viewController id="aYk-kC-klD" customClass="HelpViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WzS-Dd-ZUc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZVU-Nx-NEo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CenterLabelCell" rowHeight="126" id="sN6-8c-M25" customClass="HelpLabelTableViewCell" customModule="MythRetelling" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="126"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sN6-8c-M25" id="y0H-vr-pQR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiline info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-su-VCf">
+                                                    <rect key="frame" x="15" y="11" width="345" height="104"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hNE-su-VCf" firstAttribute="top" secondItem="y0H-vr-pQR" secondAttribute="topMargin" id="HIa-1r-Ucj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hNE-su-VCf" secondAttribute="bottom" id="aRi-4z-0cK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hNE-su-VCf" secondAttribute="trailing" id="jbn-Rt-fuH"/>
+                                                <constraint firstItem="hNE-su-VCf" firstAttribute="leading" secondItem="y0H-vr-pQR" secondAttribute="leadingMargin" id="s7Z-fZ-2vH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="centerLabel" destination="hNE-su-VCf" id="UbL-tv-s2k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aYk-kC-klD" id="Hts-fh-Lrs"/>
+                                    <outlet property="delegate" destination="aYk-kC-klD" id="z2g-Km-vWd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZVU-Nx-NEo" firstAttribute="top" secondItem="QPt-Yg-fUA" secondAttribute="top" id="3GN-DP-9Jt"/>
+                            <constraint firstItem="ZVU-Nx-NEo" firstAttribute="leading" secondItem="QPt-Yg-fUA" secondAttribute="leading" id="ZM9-RS-ltn"/>
+                            <constraint firstItem="QPt-Yg-fUA" firstAttribute="trailing" secondItem="ZVU-Nx-NEo" secondAttribute="trailing" id="vvn-2x-nu5"/>
+                            <constraint firstItem="QPt-Yg-fUA" firstAttribute="bottom" secondItem="ZVU-Nx-NEo" secondAttribute="bottom" id="yLT-ne-Qq0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QPt-Yg-fUA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="tJH-WA-BE3"/>
+                    <connections>
+                        <outlet property="helpTableView" destination="ZVU-Nx-NEo" id="BVk-DR-a2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7V-iL-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.5999999999999" y="575.26236881559225"/>
+        </scene>
     </scenes>
     <resources>
         <image name="paper_bg" width="810" height="987"/>
         <image name="zeus" width="400" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gr6-Nd-fnN"/>
+        <segue reference="qAt-Tp-xBR"/>
     </inferredMetricsTieBreakers>
 </document>

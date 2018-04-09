@@ -22,6 +22,7 @@
 		876142BE2079FF5700D8FF6A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876142BD2079FF5700D8FF6A /* Login.storyboard */; };
 		876142C1207A017F00D8FF6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876142C0207A017F00D8FF6A /* LoginViewController.swift */; };
 		878E8FB3207A08B300304A1A /* GameStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E8FB2207A08B300304A1A /* GameStat.swift */; };
+		87B74ED7207BC8B30052E1CB /* HelpLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B74ED6207BC8B30052E1CB /* HelpLabelTableViewCell.swift */; };
 		87D787072070CD0000E1B5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787062070CD0000E1B5E9 /* AppDelegate.swift */; };
 		87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787082070CD0000E1B5E9 /* GameViewController.swift */; };
 		87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D7870A2070CD0000E1B5E9 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		876142BD2079FF5700D8FF6A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		876142C0207A017F00D8FF6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		878E8FB2207A08B300304A1A /* GameStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStat.swift; sourceTree = "<group>"; };
+		87B74ED6207BC8B30052E1CB /* HelpLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpLabelTableViewCell.swift; sourceTree = "<group>"; };
 		87D787032070CD0000E1B5E9 /* MythRetelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythRetelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D787062070CD0000E1B5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D787082070CD0000E1B5E9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */,
 				8730F7A52079DD6400706B45 /* ScoreTableViewCell.swift */,
+				87B74ED6207BC8B30052E1CB /* HelpLabelTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				8730F7952079B5BA00706B45 /* Constants.swift in Sources */,
 				871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */,
 				87D787092070CD0000E1B5E9 /* GameViewController.swift in Sources */,
+				87B74ED7207BC8B30052E1CB /* HelpLabelTableViewCell.swift in Sources */,
 				871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */,
 				87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */,
 				87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */,
