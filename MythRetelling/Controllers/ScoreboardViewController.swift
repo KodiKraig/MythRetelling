@@ -79,6 +79,7 @@ class ScoreboardViewController: UIViewController {
         for b in scoreSortBtns {
             b.tintColor = Constants.SecondaryColor
             b.setTitleColor(UIColor.white, for: .normal)
+            b.titleLabel?.adjustsFontSizeToFitWidth = true
         }
     }
     

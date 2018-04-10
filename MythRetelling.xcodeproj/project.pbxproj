@@ -11,6 +11,8 @@
 		871C60082071D20400F6B8E8 /* game_cards.txt in Resources */ = {isa = PBXBuildFile; fileRef = 871C60072071D20400F6B8E8 /* game_cards.txt */; };
 		871C600A20720B4A00F6B8E8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600920720B4A00F6B8E8 /* StoryViewController.swift */; };
 		871C600C20720C0C00F6B8E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C600B20720C0C00F6B8E8 /* Utilities.swift */; };
+		872217BF207C3B9C0095638F /* Marimba_Boy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 872217BE207C3B9C0095638F /* Marimba_Boy.wav */; };
+		872217C1207C42170095638F /* Shanghai_Action1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 872217C0207C42170095638F /* Shanghai_Action1.wav */; };
 		8730F78F2079B4F200706B45 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F78E2079B4F200706B45 /* MainMenuViewController.swift */; };
 		8730F7912079B52700706B45 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7902079B52700706B45 /* HelpTableViewController.swift */; };
 		8730F7952079B5BA00706B45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8730F7942079B5BA00706B45 /* Constants.swift */; };
@@ -63,6 +65,8 @@
 		871C60072071D20400F6B8E8 /* game_cards.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = game_cards.txt; sourceTree = "<group>"; };
 		871C600920720B4A00F6B8E8 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		871C600B20720C0C00F6B8E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		872217BE207C3B9C0095638F /* Marimba_Boy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Marimba_Boy.wav; sourceTree = "<group>"; };
+		872217C0207C42170095638F /* Shanghai_Action1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shanghai_Action1.wav; sourceTree = "<group>"; };
 		8730F78E2079B4F200706B45 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		8730F7902079B52700706B45 /* HelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		8730F7942079B5BA00706B45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				871C60072071D20400F6B8E8 /* game_cards.txt */,
+				872217BE207C3B9C0095638F /* Marimba_Boy.wav */,
+				872217C0207C42170095638F /* Shanghai_Action1.wav */,
 				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
 				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
 				87D787152070CD0100E1B5E9 /* Info.plist */,
@@ -397,7 +403,9 @@
 				87D787112070CD0100E1B5E9 /* Assets.xcassets in Resources */,
 				871C60082071D20400F6B8E8 /* game_cards.txt in Resources */,
 				876142BE2079FF5700D8FF6A /* Login.storyboard in Resources */,
+				872217C1207C42170095638F /* Shanghai_Action1.wav in Resources */,
 				87D7870C2070CD0000E1B5E9 /* Main.storyboard in Resources */,
+				872217BF207C3B9C0095638F /* Marimba_Boy.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

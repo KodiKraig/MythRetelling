@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import AVKit
 
-class GameManager {
+class GameManager: NSObject {
     
     static var sI = GameManager()
     static let TimerDidUpdateNotification = Notification(name: Notification.Name.init("TimerDidUpdate"))
@@ -17,7 +18,12 @@ class GameManager {
     var cards = [MythCard]()
     var selectedCards = [(card: MythCard, path: IndexPath)]()
     var timer = Time()
-    
+    fileprivate var audioPlayer: AVAudioPlayer?
+    fileprivate var isPlayingSound = false
+    fileprivate var isPlayingMainMenuSound = true
+    fileprivate let mainMenuMusicName = (name: "Marimba_Boy", ext: "wav")
+    fileprivate let gameplayMusicName = (name: "Shanghai_Action1", ext: "wav")
+
     enum Mode: String {
         case easy = "Easy"
         case medium = "Medium"
@@ -63,7 +69,8 @@ class GameManager {
     
     // MARK: init
     
-    init() {
+    override init() {
+        super.init()
         setNewGame()
     }
     
@@ -95,6 +102,67 @@ class GameManager {
         case .hard:
             currentScore+=Score.Hard.IncorrectGuessScore
         }
+    }
+    
+    // MARK: Audio player
+    
+    func playMainMenuSound() {
+        if audioPlayer == nil || !isPlayingMainMenuSound {
+            if let url = Bundle.main.url(forResource: mainMenuMusicName.name, withExtension: mainMenuMusicName.ext) {
+                if let sound = try? AVAudioPlayer(contentsOf: url) {
+                    if audioPlayer != nil {
+                        audioPlayer?.stop()
+                    }
+                    
+                    sound.delegate = self
+                    sound.prepareToPlay()
+                    sound.play()
+                    audioPlayer = sound
+                }
+            }
+        } else {
+            audioPlayer?.play()
+        }
+        
+        if audioPlayer != nil {
+            isPlayingSound = true
+            isPlayingMainMenuSound = true
+        }
+    }
+    
+    func playGameplaySound() {
+        if audioPlayer == nil || isPlayingMainMenuSound {
+            if let url = Bundle.main.url(forResource: gameplayMusicName.name, withExtension: gameplayMusicName.ext) {
+                if let sound = try? AVAudioPlayer(contentsOf: url) {
+                    if audioPlayer != nil {
+                        audioPlayer?.stop()
+                    }
+                    
+                    sound.delegate = self
+                    sound.prepareToPlay()
+                    sound.play()
+                    audioPlayer = sound
+                }
+            }
+        } else {
+            audioPlayer?.play()
+        }
+        
+        if audioPlayer != nil {
+            isPlayingSound = true
+            isPlayingMainMenuSound = false
+        }
+    }
+    
+    func stopPlayingSound() {
+        isPlayingSound = false
+        audioPlayer?.stop()
+        audioPlayer = nil
+    }
+    
+    fileprivate func pauseSound() {
+        isPlayingSound = false
+        audioPlayer?.pause()
     }
     
     // MARK: Timer
@@ -178,3 +246,15 @@ class GameManager {
         return nil
     }
 }
+
+extension GameManager: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        isPlayingSound = false
+        if isPlayingMainMenuSound {
+            playMainMenuSound()
+        } else {
+            playGameplaySound()
+        }
+    }
+}
+

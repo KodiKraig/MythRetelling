@@ -64,6 +64,7 @@ extension HelpViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LocalConstants.CenterCellID, for: indexPath) as! HelpLabelTableViewCell
         cell.backgroundColor = .clear
+        cell.selectionStyle = .none
         cell.centerLabel.text = info[indexPath.section][indexPath.row]
         cell.centerLabel.font = indexPath.section == info.count - 1 ? UIFont(name: "ChalkboardSE-Regular", size: 16) : UIFont(name: "ChalkboardSE-Bold", size: 16)
         return cell

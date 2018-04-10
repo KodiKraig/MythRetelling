@@ -51,6 +51,7 @@ class MainMenuViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        GameManager.sI.playMainMenuSound()
         switch GameManager.sI.currentMode {
         case .easy:
             difficultySegmentControl.selectedSegmentIndex = 0
@@ -59,11 +60,5 @@ class MainMenuViewController: UIViewController {
         case .hard:
             difficultySegmentControl.selectedSegmentIndex = 2
         }
-    }
-    
-    // MARK: Navigation
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
     }
 }

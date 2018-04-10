@@ -131,7 +131,12 @@ class GameViewController: UIViewController {
     fileprivate func handleIncorrectGuess() {
         manager.dropScore()
         updateScoreboard()
-        displayAlert(self, title: "Cards do not match!", message: "Please try again")
+        let alert = UIAlertController(title: "Cards do not match!", message: "Please try again", preferredStyle: .alert)
+        present(alert, animated: true) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                alert.dismiss(animated: true, completion: nil)
+            }
+        }
         manager.deselectAllCards()
         selectBtn.isEnabled = false
         manager.selectedCards.removeAll()
@@ -139,6 +144,7 @@ class GameViewController: UIViewController {
     }
     
     fileprivate func endGame() {
+        GameManager.sI.stopPlayingSound()
         GameBackend.sI.saveGameStat(mode: manager.currentMode, time: manager.timer.seconds, score: manager.currentScore)
         let alert = UIAlertController(title: "Congratulations!",
                                       message: "You have found all the matches in \(GameManager.Time.timeString(time: manager.timer.seconds))! Press continue to view the story.", preferredStyle: .alert)
@@ -161,12 +167,14 @@ class GameViewController: UIViewController {
     }
     
     fileprivate func pauseGame() {
+        GameManager.sI.stopPlayingSound()
         manager.timer.pauseTimer()
         pauseView.isHidden = false
         pauseBtn.title = "Resume"
     }
     
     fileprivate func startGame() {
+        GameManager.sI.playGameplaySound()
         manager.timer.runTimer()
         pauseView.isHidden = true
         pauseBtn.title = "Pause"
