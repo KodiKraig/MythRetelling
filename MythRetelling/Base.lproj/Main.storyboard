@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-5S-Rba">
-                                <rect key="frame" x="1" y="65" width="373" height="557"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q2N-n5-E6M">
                                     <size key="itemSize" width="195" height="224"/>
@@ -30,7 +30,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="kEV-4x-kmt" customClass="MythCardCollectionCell" customModule="MythRetelling" customModuleProvider="target">
-                                        <rect key="frame" x="89" y="0.0" width="195" height="224"/>
+                                        <rect key="frame" x="90" y="0.0" width="195" height="224"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="195" height="224"/>
@@ -88,12 +88,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Try-Ac-VSn" secondAttribute="trailing" id="4Cj-W5-g8T"/>
-                            <constraint firstItem="aU2-5S-Rba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="YVH-qh-c7T"/>
+                            <constraint firstItem="aU2-5S-Rba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YVH-qh-c7T"/>
                             <constraint firstItem="Try-Ac-VSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fTN-VI-mUg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aU2-5S-Rba" secondAttribute="trailing" constant="1" id="mAS-Vv-SpQ"/>
-                            <constraint firstItem="Try-Ac-VSn" firstAttribute="top" secondItem="aU2-5S-Rba" secondAttribute="bottom" constant="1" id="q5u-DS-aVf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aU2-5S-Rba" secondAttribute="trailing" id="mAS-Vv-SpQ"/>
+                            <constraint firstItem="Try-Ac-VSn" firstAttribute="top" secondItem="aU2-5S-Rba" secondAttribute="bottom" id="q5u-DS-aVf"/>
                             <constraint firstItem="Try-Ac-VSn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qRU-QT-cN0"/>
-                            <constraint firstItem="aU2-5S-Rba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="txT-Tr-XGy"/>
+                            <constraint firstItem="aU2-5S-Rba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="txT-Tr-XGy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -122,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="2020" y="-215.44227886056973"/>
         </scene>
-        <!--Law Abiding Citizen-->
+        <!--Myth Warp-->
         <scene sceneID="dSv-lv-HdN">
             <objects>
                 <viewController id="4ha-dM-Z4b" customClass="StoryViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mRV-im-rgN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Law Abiding Citizen" id="GSP-y3-Zg1"/>
+                    <navigationItem key="navigationItem" title="Myth Warp" id="GSP-y3-Zg1"/>
                     <connections>
                         <outlet property="storyTextView" destination="Qlw-fe-LCT" id="Q6L-5f-RV8"/>
                     </connections>
@@ -329,7 +329,7 @@
             </objects>
             <point key="canvasLocation" x="2020" y="-922.48875562218893"/>
         </scene>
-        <!--Law Abiding Citizen-->
+        <!--Myth Warp-->
         <scene sceneID="GoT-aJ-R0W">
             <objects>
                 <viewController id="8tR-wE-GXu" customClass="MainMenuViewController" customModule="MythRetelling" customModuleProvider="target" sceneMemberID="viewController">
@@ -409,7 +409,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U0m-tQ-YGa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Law Abiding Citizen" id="fNx-8s-5sX">
+                    <navigationItem key="navigationItem" title="Myth Warp" id="fNx-8s-5sX">
                         <barButtonItem key="leftBarButtonItem" title="Scoreboard" id="Ydn-K0-5sb">
                             <connections>
                                 <segue destination="iyy-or-lfI" kind="show" id="SDd-J6-PGI"/>

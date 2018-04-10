@@ -134,7 +134,7 @@ extension ScoreboardViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         cell.backgroundColor = .clear
         if scores == nil {
-            cell.nameLbl.text = "No games found"
+            cell.nameLbl.text = "No games found..."
             cell.difficultyLbl.text = ""
             cell.timeLbl.text = ""
             cell.scoreLbl.text = ""

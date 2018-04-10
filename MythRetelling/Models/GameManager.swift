@@ -160,7 +160,7 @@ class GameManager: NSObject {
         audioPlayer = nil
     }
     
-    fileprivate func pauseSound() {
+    func pauseSound() {
         isPlayingSound = false
         audioPlayer?.pause()
     }

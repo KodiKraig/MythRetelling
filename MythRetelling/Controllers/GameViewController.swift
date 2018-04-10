@@ -144,10 +144,10 @@ class GameViewController: UIViewController {
     }
     
     fileprivate func endGame() {
-        GameManager.sI.stopPlayingSound()
+        manager.stopPlayingSound()
         GameBackend.sI.saveGameStat(mode: manager.currentMode, time: manager.timer.seconds, score: manager.currentScore)
         let alert = UIAlertController(title: "Congratulations!",
-                                      message: "You have found all the matches in \(GameManager.Time.timeString(time: manager.timer.seconds))! Press continue to view the story.", preferredStyle: .alert)
+                                      message: "You have found all the matches with a score of \(manager.currentScore) in \(GameManager.Time.timeString(time: manager.timer.seconds))! Press continue to view the story.", preferredStyle: .alert)
         let continueAction = UIAlertAction(title: "Continue", style: .default) { (action) in
             self.performSegue(withIdentifier: LocalConstants.SegueToStoryID, sender: nil)
         }
@@ -167,14 +167,14 @@ class GameViewController: UIViewController {
     }
     
     fileprivate func pauseGame() {
-        GameManager.sI.stopPlayingSound()
+        manager.pauseSound()
         manager.timer.pauseTimer()
         pauseView.isHidden = false
         pauseBtn.title = "Resume"
     }
     
     fileprivate func startGame() {
-        GameManager.sI.playGameplaySound()
+        manager.playGameplaySound()
         manager.timer.runTimer()
         pauseView.isHidden = true
         pauseBtn.title = "Pause"

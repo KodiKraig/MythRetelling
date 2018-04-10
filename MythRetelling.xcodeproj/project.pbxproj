@@ -35,6 +35,7 @@
 		87D7872A2070CD0200E1B5E9 /* MythRetellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787292070CD0200E1B5E9 /* MythRetellingUITests.swift */; };
 		87D7873A2070D0F300E1B5E9 /* MythCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D787392070D0F300E1B5E9 /* MythCard.swift */; };
 		87D7873C2070D3A400E1B5E9 /* MythCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */; };
+		87FEA271207D67C5004E5016 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FEA270207D67C4004E5016 /* Media.xcassets */; };
 		B75202B735C911E42700B8A6 /* Pods_MythRetellingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6F3B0D1AE9BEE39E043757 /* Pods_MythRetellingTests.framework */; };
 		E425A3D7B5648263E18BBB33 /* Pods_MythRetellingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32798B37D8A12C7DEB382099 /* Pods_MythRetellingUITests.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		87D7872B2070CD0200E1B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D787392070D0F300E1B5E9 /* MythCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCard.swift; sourceTree = "<group>"; };
 		87D7873B2070D3A400E1B5E9 /* MythCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythCardCollectionCell.swift; sourceTree = "<group>"; };
+		87FEA270207D67C4004E5016 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C412A939AD3006440E8340EE /* Pods-MythRetellingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6A4023056D2E3F28074373D /* Pods-MythRetellingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingTests/Pods-MythRetellingTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0E8A8FE604602831E4AC653 /* Pods-MythRetellingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythRetellingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythRetellingUITests/Pods-MythRetellingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				872217BE207C3B9C0095638F /* Marimba_Boy.wav */,
 				872217C0207C42170095638F /* Shanghai_Action1.wav */,
 				87D787102070CD0100E1B5E9 /* Assets.xcassets */,
+				87FEA270207D67C4004E5016 /* Media.xcassets */,
 				87D787122070CD0100E1B5E9 /* LaunchScreen.storyboard */,
 				87D787152070CD0100E1B5E9 /* Info.plist */,
 			);
@@ -401,6 +404,7 @@
 			files = (
 				87D787142070CD0100E1B5E9 /* LaunchScreen.storyboard in Resources */,
 				87D787112070CD0100E1B5E9 /* Assets.xcassets in Resources */,
+				87FEA271207D67C5004E5016 /* Media.xcassets in Resources */,
 				871C60082071D20400F6B8E8 /* game_cards.txt in Resources */,
 				876142BE2079FF5700D8FF6A /* Login.storyboard in Resources */,
 				872217C1207C42170095638F /* Shanghai_Action1.wav in Resources */,
